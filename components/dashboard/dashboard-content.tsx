@@ -7,11 +7,10 @@ import { CheckInCard } from './check-in-card'
 import { MeetingCard } from './meeting-card'
 import { GoalsOverview } from './goals-overview'
 import { RecentInsights } from './recent-insights'
-import { GroupUpdates } from './group-updates'
 import { ConfidentialityBanner } from './confidentiality-banner'
 
 export function DashboardContent() {
-  const { user, goals, feedItems, upcomingMeeting } = useApp()
+  const { user, goals, upcomingMeeting } = useApp()
   const daysUntilCheckIn = getDaysUntilCheckIn()
   const daysUntilMeeting = getDaysUntilMeeting()
   const checkInDue = isCheckInDue()
@@ -40,10 +39,9 @@ export function DashboardContent() {
         {/* Goals Overview */}
         <GoalsOverview goals={goals} />
 
-        {/* Two Column Layout for Insights and Updates */}
-        <div className="grid gap-6 lg:grid-cols-2 mt-8">
+        {/* Recent Insights - Full Width */}
+        <div className="mt-8">
           <RecentInsights />
-          <GroupUpdates feedItems={feedItems.slice(0, 3)} />
         </div>
       </div>
     </div>
