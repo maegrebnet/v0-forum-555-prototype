@@ -19,14 +19,12 @@ import {
   User, 
   Bell, 
   Calendar, 
-  Shield, 
-  Users,
   Mail,
   LogOut
 } from 'lucide-react'
 
 export function SettingsScreen() {
-  const { user, forumGroup, groupMembers } = useApp()
+  const { user } = useApp()
   const [emailNotifications, setEmailNotifications] = useState(true)
   const [checkInReminder, setCheckInReminder] = useState('5')
   const [meetingReminder, setMeetingReminder] = useState('24')
@@ -163,85 +161,6 @@ export function SettingsScreen() {
                 <p className="text-sm text-muted-foreground mt-1">
                   Monthly Forum Meeting — Virtual
                 </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Privacy */}
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-muted-foreground" />
-                <CardTitle className="text-base">Privacy</CardTitle>
-              </div>
-              <CardDescription>Control what&apos;s shared with your group</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label>Goals shared by default</Label>
-                  <p className="text-sm text-muted-foreground">
-                    Your 5 goals are visible to your Forum group
-                  </p>
-                </div>
-                <Switch defaultChecked disabled />
-              </div>
-
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label>Reflections private by default</Label>
-                  <p className="text-sm text-muted-foreground">
-                    Your 5% reflections stay private unless you choose to share
-                  </p>
-                </div>
-                <Switch defaultChecked disabled />
-              </div>
-
-              <div className="p-3 rounded-lg bg-primary/5 border border-primary/10 text-sm">
-                <p className="text-muted-foreground">
-                  <span className="text-foreground font-medium">Note:</span> These are core Forum 555 principles and cannot be changed. 
-                  You can always choose to share individual reflections, insights, or resources during check-in.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Forum Group */}
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-muted-foreground" />
-                <CardTitle className="text-base">Forum Group</CardTitle>
-              </div>
-              <CardDescription>Your private Forum community</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <p className="font-medium text-foreground">{forumGroup.name}</p>
-                <p className="text-sm text-muted-foreground mt-1">
-                  {forumGroup.description}
-                </p>
-              </div>
-
-              <div className="pt-4 border-t border-border">
-                <Label className="text-sm text-muted-foreground mb-3 block">
-                  Members ({groupMembers.length})
-                </Label>
-                <div className="flex flex-wrap gap-2">
-                  {groupMembers.map((member) => (
-                    <div 
-                      key={member.id}
-                      className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted"
-                    >
-                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-xs font-medium text-primary">
-                        {member.name.split(' ').map(n => n[0]).join('')}
-                      </div>
-                      <span className="text-sm text-foreground">
-                        {member.id === user.id ? 'You' : member.name.split(' ')[0]}
-                      </span>
-                    </div>
-                  ))}
-                </div>
               </div>
             </CardContent>
           </Card>

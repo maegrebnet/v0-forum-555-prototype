@@ -86,7 +86,7 @@ export function GoalsEditor() {
               </h1>
               <p className="text-sm text-muted-foreground flex items-center gap-1.5 mt-1">
                 <Users className="w-4 h-4" />
-                Shared with your Forum group by default
+                Shared by default
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ export function GoalsEditor() {
             <div className="flex items-start gap-3">
               <Info className="w-5 h-5 text-primary mt-0.5 shrink-0" />
               <div className="text-sm">
-                <p className="text-foreground font-medium">Your goals are visible to your Forum group</p>
+                <p className="text-foreground font-medium">Your goals are shared</p>
                 <p className="text-muted-foreground mt-1">
                   This transparency supports accountability and meaningful exchange. You can edit your goals anytime.
                 </p>

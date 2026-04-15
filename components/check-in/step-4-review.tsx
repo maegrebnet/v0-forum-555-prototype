@@ -42,7 +42,7 @@ export function Step4Review({
           Review Your Check-in
         </h2>
         <p className="mt-2 text-muted-foreground">
-          Confirm what stays private and what you&apos;d like to share with your Forum group.
+          Review your entries before submitting.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export function Step4Review({
       <div className="space-y-4">
         <div className="flex items-center gap-2 text-sm font-medium text-foreground">
           <Lock className="w-4 h-4 text-muted-foreground" />
-          Private to You
+          Personal Reflections
         </div>
 
         <Card className="bg-muted/30 border-dashed">
@@ -118,7 +118,7 @@ export function Step4Review({
       <div className="space-y-4">
         <div className="flex items-center gap-2 text-sm font-medium text-foreground">
           <Users className="w-4 h-4 text-primary" />
-          Shared with Forum Group
+          Shared Content
         </div>
 
         {/* Goals */}
@@ -196,7 +196,7 @@ export function Step4Review({
           <Card className="border-dashed">
             <CardContent className="py-6 text-center">
               <p className="text-sm text-muted-foreground">
-                No additional thoughts shared with your Forum group
+                No additional thoughts shared
               </p>
             </CardContent>
           </Card>

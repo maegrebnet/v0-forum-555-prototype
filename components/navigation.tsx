@@ -7,7 +7,6 @@ import {
   LayoutDashboard, 
   Timer, 
   Target, 
-  Users, 
   FileText, 
   Settings,
   Menu,
@@ -21,7 +20,6 @@ const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/check-in', label: '555 Check-in', icon: Timer },
   { href: '/goals', label: 'Goals', icon: Target },
-  { href: '/group', label: 'Group Feed', icon: Users },
   { href: '/summary', label: 'Pre-meeting', icon: FileText },
   { href: '/settings', label: 'Settings', icon: Settings },
 ]
