@@ -112,7 +112,7 @@ export default function LoginPage() {
               <div>
                 <p className="text-sm font-medium text-foreground">Confidential</p>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  Private to your Forum group
+                  End-to-end encrypted
                 </p>
               </div>
             </div>

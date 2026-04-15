@@ -1,7 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Lightbulb, Lock, Calendar } from 'lucide-react'
+import { Lightbulb, Calendar } from 'lucide-react'
 import { recentCheckIn } from '@/lib/mock-data'
 
 export function RecentInsights() {
@@ -21,9 +21,8 @@ export function RecentInsights() {
           </div>
           <div>
             <CardTitle className="text-lg font-medium">Recent Insights</CardTitle>
-            <p className="text-sm text-muted-foreground flex items-center gap-1.5">
-              <Lock className="w-3.5 h-3.5" />
-              Private to you
+            <p className="text-sm text-muted-foreground">
+              From your recent check-ins
             </p>
           </div>
         </div>

@@ -19,7 +19,6 @@ import {
   User, 
   Bell, 
   Calendar, 
-  Shield, 
   Mail,
   LogOut
 } from 'lucide-react'
@@ -161,45 +160,6 @@ export function SettingsScreen() {
                 </div>
                 <p className="text-sm text-muted-foreground mt-1">
                   Monthly Forum Meeting — Virtual
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Privacy */}
-          <Card>
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-muted-foreground" />
-                <CardTitle className="text-base">Privacy</CardTitle>
-              </div>
-              <CardDescription>Control what&apos;s shared with your group</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label>Goals shared by default</Label>
-                  <p className="text-sm text-muted-foreground">
-                    Your 5 goals are visible to your Forum group
-                  </p>
-                </div>
-                <Switch defaultChecked disabled />
-              </div>
-
-              <div className="flex items-center justify-between">
-                <div className="space-y-0.5">
-                  <Label>Reflections private by default</Label>
-                  <p className="text-sm text-muted-foreground">
-                    Your 5% reflections stay private unless you choose to share
-                  </p>
-                </div>
-                <Switch defaultChecked disabled />
-              </div>
-
-              <div className="p-3 rounded-lg bg-primary/5 border border-primary/10 text-sm">
-                <p className="text-muted-foreground">
-                  <span className="text-foreground font-medium">Note:</span> These are core Forum 555 principles and cannot be changed. 
-                  You can always choose to share individual reflections, insights, or resources during check-in.
                 </p>
               </div>
             </CardContent>

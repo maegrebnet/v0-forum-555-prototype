@@ -73,7 +73,7 @@ export function Step2Goals({ goals, updates, onChange, onBack, onNext }: Step2Go
         </p>
         <div className="flex items-center gap-1.5 mt-2 text-xs text-primary">
           <Users className="w-3.5 h-3.5" />
-          Goal progress is shared with your Forum group by default
+          Goal progress is shared by default
         </div>
       </div>
 

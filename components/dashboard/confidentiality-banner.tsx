@@ -9,7 +9,7 @@ export function ConfidentialityBanner() {
       <p className="text-sm text-foreground">
         <span className="font-medium">Your space is confidential.</span>{' '}
         <span className="text-muted-foreground">
-          Reflections remain private unless you choose to share them with your Forum group.
+          Reflections remain private unless you choose to share them.
         </span>
       </p>
     </div>

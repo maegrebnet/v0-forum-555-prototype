@@ -119,7 +119,7 @@ export function Step1Reflection({ data, onChange, onNext }: Step1ReflectionProps
             </Label>
             <Textarea
               id="forum-challenge"
-              placeholder="Is there something you'd benefit from discussing with your Forum group?"
+              placeholder="Is there something you'd benefit from discussing?"
               value={data.forumChallenge}
               onChange={(e) => updateField('forumChallenge', e.target.value)}
               className="min-h-[80px] resize-none"

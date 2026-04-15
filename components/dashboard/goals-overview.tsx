@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Target, ArrowRight, Users } from 'lucide-react'
+import { Target, ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { Goal, GoalStatus } from '@/lib/types'
 
@@ -38,9 +38,8 @@ export function GoalsOverview({ goals }: GoalsOverviewProps) {
           </div>
           <div>
             <CardTitle className="text-lg font-medium">Your 5 Goals</CardTitle>
-            <p className="text-sm text-muted-foreground flex items-center gap-1.5">
-              <Users className="w-3.5 h-3.5" />
-              Shared with your Forum group
+            <p className="text-sm text-muted-foreground">
+              Track your progress
             </p>
           </div>
         </div>

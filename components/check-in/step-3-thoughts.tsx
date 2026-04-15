@@ -31,7 +31,7 @@ export function Step3Thoughts({ data, onChange, onBack, onNext }: Step3ThoughtsP
         </p>
         <div className="flex items-center gap-1.5 mt-2 text-xs text-muted-foreground">
           <Lock className="w-3.5 h-3.5" />
-          Toggle sharing for anything you&apos;d like your Forum group to see
+          Toggle sharing for anything you&apos;d like to share
         </div>
       </div>
 
@@ -116,7 +116,7 @@ export function Step3Thoughts({ data, onChange, onBack, onNext }: Step3ThoughtsP
             </Label>
             <Textarea
               id="resource"
-              placeholder="Something valuable you've discovered that might help others in your Forum group..."
+              placeholder="Something valuable you've discovered that might help others..."
               value={data.resource}
               onChange={(e) => updateField('resource', e.target.value)}
               className="min-h-[100px] resize-none"
